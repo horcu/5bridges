@@ -1,0 +1,25 @@
+﻿using System.Web.Mvc;
+using System.Web.Routing;
+
+namespace WebApplication
+{
+    public class RouteConfig
+    {
+        public static void RegisterRoutes(RouteCollection routes)
+        {
+            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+            routes.MapRoute(
+                "Default",
+                "{controller}/{action}/{id}",
+                new {controller = "Home", action = "Index"}
+            );
+
+            routes.MapRoute(
+                "FiveBridges",
+                "{controller}/{action}",
+                new {controller = "FiveBridges", action = "Index"}
+            );
+        }
+    }
+}
