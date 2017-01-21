@@ -10,6 +10,7 @@ angular.module("app-5bridges")
     function annArundelController(){
         var vm = this;
         vm.name = "annArundel";
+        vm.location = "Maryland";
     }
 
 })();
