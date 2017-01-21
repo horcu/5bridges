@@ -3,28 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Bridges of Maryland</title>
+    <link rel="css" href="/Content/bootstrap.min.css" />
+    <link rel="css" href="/Content/bootstrap-theme.min.css" />
+    <link rel="css" href="/Content/site.css" />
 </head>
 <body>
 
-<div data-ng-app="">
-<div class="row" data-ng-app="app-5bridges">
+<div  data-ng-app="app-fiveBridges" style="height: 100%">
 
-<div data-ng-controller="annArundelController as vm" class="col-md-6 col-md-offset-3">
-{{ vm.name }}
-{{ vm.location }}
+<div class="well" data-ng-controller="annArundelController as vm">
+    <span><strong>{{ vm.name }}'s</strong> bridge is located in <strong>{{ vm.location }}</strong></span>
 </div>
 
-<div class="row">
-    <h3 class="lead">Horatio A Cummings</h3>
-    <p>Senior Software Developer</p>
+    <div data-ng-controller="baltimoreController as vm">
+        <span><strong>{{ vm.name }}'s</strong> bridge is located in <strong>{{ vm.location }}</strong></span>
+    </div>
 
+    <div data-ng-controller="carollController as vm">
+        <span><strong>{{ vm.name }}'s</strong> bridge is located in <strong>{{ vm.location }}</strong></span>
+    </div>
+
+    <div data-ng-controller="harfordController as vm">
+        <span><strong>{{ vm.name }}'s</strong> bridge is located in <strong>{{ vm.location }}</strong></span>
+    </div>
+
+    <div data-ng-controller="princeGeorgeController as vm">
+        <span><strong>{{ vm.name }}'s</strong> bridge is located in <strong>{{ vm.location }}</strong></span>
+    </div>
+
+<div class="row" style="float:right; position: relative; margin-bottom: 0;">
+    <p class="lead"><strong>Horatio A Cummings</strong><br> Senior Software Developer</p>
 </div>
 
-</div>
 </div>
 <script src="Scripts/ang/angular.js">  </script>
-<script src="Scripts/app-5bridges.js">  </script>
+<script src="Scripts/app-fiveBridges.js">  </script>
 <script src="Scripts/Controllers/annArundelController.js">  </script>
+<script src="Scripts/Controllers/baltimoreController.js">  </script>
+<script src="Scripts/Controllers/harfordController.js">  </script>
+<script src="Scripts/Controllers/carollController.js">  </script>
+<script src="Scripts/Controllers/princeGeorgeController.js">  </script>
 
 </body>
 </html>

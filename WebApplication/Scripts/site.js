@@ -1,3 +1,6 @@
 // Write your Javascript code.
+(function() {
+    "use strict";
 
-"use strict";
+
+})();

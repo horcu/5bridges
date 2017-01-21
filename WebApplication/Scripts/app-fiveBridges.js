@@ -1,7 +1,9 @@
+//app-fivebridges
+
 (function() {
     //create the module
 
     "use strict"
-    angular.module("app-5bridges",[])
+    angular.module("app-fiveBridges",[])
 
 })();

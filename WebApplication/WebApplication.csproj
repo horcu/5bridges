@@ -197,10 +197,14 @@
     <Content Include="Scripts\ang\angular.js" />
     <Content Include="Scripts\ang\angular.min.js" />
     <Content Include="Scripts\ang\angular.min.js.map" />
-    <Content Include="Scripts\app-5bridges.js" />
+    <Content Include="Scripts\app-fiveBridges.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\Controllers\annArundelController.js" />
+    <Content Include="Scripts\Controllers\baltimoreController.js" />
+    <Content Include="Scripts\Controllers\carollController.js" />
+    <Content Include="Scripts\Controllers\harfordController.js" />
+    <Content Include="Scripts\Controllers\princeGeorgeController.js" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
     <Content Include="Scripts\i18n\angular-locale_af-za.js" />

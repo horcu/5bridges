@@ -1,16 +1,16 @@
-//5 bridges controller
-(function() {
+//Ann Arundel Controller
+     (function() {
 
-"use strict";
+     "use strict";
 
-//get the existing module
-angular.module("app-5bridges")
-    .controller("annArundelController", annArundelController);
+     //get the existing module
+     angular.module("app-fiveBridges")
+         .controller("annArundelController", annArundelController);
 
-    function annArundelController(){
-        var vm = this;
-        vm.name = "annArundel";
-        vm.location = "Maryland";
-    }
+         function annArundelController(){
+             var vm = this;
+             vm.name = "Ann Arundel";
+             vm.location = "Ann Arundel County";
+         }
 
-})();
+     })();
