@@ -12,11 +12,6 @@ namespace WebApplication.Models
         public AnnArundel(int id, string name, string information, long population)
                    : base(id,name,information,population) {}
 
-        public new int GetLength()
-        {
-            return 20;
-        }
-
         public new string GetCountyInfo()
         {
             return Information;

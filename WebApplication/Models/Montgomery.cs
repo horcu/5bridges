@@ -8,10 +8,6 @@ namespace WebApplication.Models
         {
 
         }
-        public new int GetLength()
-        {
-            return 15;
-        }
 
         public new string GetCountyInfo()
         {

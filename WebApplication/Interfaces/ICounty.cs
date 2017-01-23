@@ -2,7 +2,6 @@
 {
     public interface ICounty
     {
-       int GetLength();
         string GetCountyInfo();
     }
 }
