@@ -6,10 +6,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
-using System.Web.Http.Results;
 using System.Web.Mvc;
-using System.Web.Mvc.Ajax;
-using System.Web.Routing;
 using WebApplication.Interfaces;
 using WebApplication.Models;
 
@@ -29,6 +26,7 @@ namespace WebApplication.Controllers
         }
 
         [System.Web.Mvc.Route("/api/GetCountyByName/{name}")]
+        [System.Web.Mvc.HttpGet]
         public async Task<HttpResponseMessage> GetBridgeByName(string name)
         {
             if(_repository == null)

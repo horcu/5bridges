@@ -38,10 +38,16 @@ textarea {
 .right-side {
     position: relative;
     float: left;
-    width: 850px;
-    height: auto;
+    width: 600px;
+    height: 100%;
     margin-left: 50px;
     background: #efefef;
+}
+
+.info-box {
+    position: relative;
+    width: 100%;
+    height:100%;
 }
 
 

@@ -14,7 +14,9 @@ namespace WebApplication.Models
             return Information;
         }
 
-        public PrinceGeorge(int id, string name, string information, int population) : base(id, name, information, population)
+        public PrinceGeorge(int id, string name, string information, int population)
+
+            : base(id, name, information, population)
         {
         }
     }

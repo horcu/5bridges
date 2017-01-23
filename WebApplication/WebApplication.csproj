@@ -219,6 +219,7 @@
     <Content Include="Scripts\Controllers\montgomeryController.js" />
     <Content Include="Scripts\Controllers\harfordController.js" />
     <Content Include="Scripts\Controllers\princeGeorgeController.js" />
+    <Content Include="Scripts\Controllers\serviceController.js" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
     <Content Include="Scripts\i18n\angular-locale_af-za.js" />
@@ -953,7 +954,6 @@
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
-    <Content Include="Scripts\service.js" />
     <Content Include="Scripts\site.js" />
     <Content Include="Scripts\text.js" />
     <Content Include="Scripts\version.json" />
