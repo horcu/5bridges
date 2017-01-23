@@ -2,11 +2,20 @@
 
 namespace WebApplication.Models
 {
-    public class PrinceGeorge:IBridge
+    public class PrinceGeorge: MarylandCounties
     {
-        public int GetLength()
+        public PrinceGeorge()
         {
-            return 10;
+
+        }
+
+        public new string GetCountyInfo()
+        {
+            return Information;
+        }
+
+        public PrinceGeorge(int id, string name, string information, int population) : base(id, name, information, population)
+        {
         }
     }
 }

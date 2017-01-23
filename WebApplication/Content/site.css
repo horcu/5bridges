@@ -22,3 +22,75 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.main-div {
+    position: relative;
+    width: 100%;
+    margin: 20px;
+    float: left;
+}
+
+.left-side {
+    position: relative;
+    float: left;
+}
+
+.right-side {
+    position: relative;
+    float: left;
+    width: 850px;
+    height: auto;
+    margin-left: 50px;
+    background: #efefef;
+}
+
+
+.aa-br-color {
+    position: relative;
+    float: left;
+    width: 70px;
+    height: 20px;
+    margin-right: 50px;
+    background: orange;
+}
+.ba-br-color {
+    background: purple;
+    position: relative;
+    float: left;
+    width: 70px;
+    height: 20px;
+    margin-right: 50px;
+
+}
+.ca-br-color {
+    background: yellow;
+    position: relative;
+    float: left;
+    width: 70px;
+    height: 20px;
+    margin-right: 50px;
+}
+
+.ha-br-color {
+    background: blue;
+    position: relative;
+    float: left;
+    width: 70px;
+    height: 20px;
+    margin-right: 50px;
+}
+.pg-br-color {
+    background: green;
+    position: relative;
+    float: left;
+    width: 70px;
+    height: 20px;
+    margin-right: 50px;
+}
+
+.icon {
+    position: relative;
+    float: right;
+    width: 30px;
+    height: 30px;
+}

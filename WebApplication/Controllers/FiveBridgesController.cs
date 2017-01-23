@@ -17,26 +17,28 @@ namespace WebApplication.Controllers
 {
     public class FiveBridgesController : ApiController
     {
-        private IBridgesRepository _repository;
+        private ICountiesRepository _repository;
 
         public FiveBridgesController()
         {
         }
 
-        public FiveBridgesController(IBridgesRepository repository)
+        public FiveBridgesController(ICountiesRepository repository)
         {
             this._repository =  repository;
         }
 
-        [System.Web.Mvc.Route("/api/GetBridgeByName/{name}")]
+        [System.Web.Mvc.Route("/api/GetCountyByName/{name}")]
         public async Task<HttpResponseMessage> GetBridgeByName(string name)
         {
             if(_repository == null)
-                _repository = new BridgesRepository();
+                _repository = new CountiesRepository();
 
-            var bridge = await _repository.GetBridgesByName(name);
+            var county = await _repository.GetCountyByName(name);
 
-            return  new HttpResponseMessage(HttpStatusCode.OK);
+            return county == null
+                ? Request.CreateErrorResponse(HttpStatusCode.BadRequest, "we were unable to retrieve data for the county name specified.")
+                : Request.CreateResponse(HttpStatusCode.OK, county.GetCountyInfo());
         }
     }
 

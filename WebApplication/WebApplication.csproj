@@ -71,6 +71,9 @@
       <HintPath>..\packages\structuremap.web.3.1.0.133\lib\net40\StructureMap.Web.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\..\..\..\..\Windows\Microsoft.NET\Framework\v4.0.30319\System.ComponentModel.DataAnnotations.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -122,15 +125,18 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\FiveBridgesController.cs" />
     <Compile Include="Controllers\HoratioController.cs" />
+    <Compile Include="Db\MdCountiesInitializer.cs" />
+    <Compile Include="Db\MdDbContext.cs" />
     <Compile Include="Global.asax.cs" />
-    <Compile Include="Interfaces\IBridge.cs" />
-    <Compile Include="Interfaces\IBridgesRepository.cs" />
+    <Compile Include="Interfaces\ICounty.cs" />
+    <Compile Include="Interfaces\ICountiesRepository.cs" />
     <Compile Include="Models\AnnArundel.cs" />
-    <Compile Include="Models\BaltimoreBridge.cs" />
-    <Compile Include="Models\CarollBridge.cs" />
-    <Compile Include="Models\HarfordBridge.cs" />
+    <Compile Include="Models\Baltimore.cs" />
+    <Compile Include="Models\Montgomery.cs" />
+    <Compile Include="Models\Harford.cs" />
     <Compile Include="Models\BridgesRepository.cs" />
-    <Compile Include="Models\NullBridge.cs" />
+    <Compile Include="Models\MarylandCounties.cs" />
+    <Compile Include="Models\NullCounty.cs" />
     <Compile Include="Models\PrinceGeorge.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -148,8 +154,16 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\site.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -202,7 +216,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\Controllers\annArundelController.js" />
     <Content Include="Scripts\Controllers\baltimoreController.js" />
-    <Content Include="Scripts\Controllers\carollController.js" />
+    <Content Include="Scripts\Controllers\montgomeryController.js" />
     <Content Include="Scripts\Controllers\harfordController.js" />
     <Content Include="Scripts\Controllers\princeGeorgeController.js" />
     <Content Include="Scripts\errors.json" />
@@ -944,9 +958,6 @@
     <Content Include="Scripts\text.js" />
     <Content Include="Scripts\version.json" />
     <Content Include="Web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

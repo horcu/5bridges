@@ -3,46 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>Bridges of Maryland</title>
-    <link rel="css" href="/Content/bootstrap.min.css" />
-    <link rel="css" href="/Content/bootstrap-theme.min.css" />
-    <link rel="css" href="/Content/site.css" />
+    <link rel="stylesheet" href="Content/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="Content/bootstrap.min.css"/>
+    <link rel="stylesheet" href="Content/site.css"/>
 </head>
 <body>
 
-<div  data-ng-app="app-fiveBridges" style="height: 100%">
+<div data-ng-app="app-fiveBridges" class="main-div">
 
-<div class="well" data-ng-controller="annArundelController as vm">
-    <span><strong>{{ vm.name }}'s</strong> bridge is located in <strong>{{ vm.location }}</strong></span>
+<div class="left-side">
+    <div data-ng-controller="annArundelController as vm" class="well well-sm">
+        <span class="aa-br-color"></span> <strong> {{ vm.name }}</strong>
+
+       <span class="icon"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
+    </div>
+
+    <div data-ng-controller="baltimoreController as vm" class="well  well-sm">
+        <span class="ba-br-color"></span> <strong>{{ vm.name }}</strong>
+    </div>
+
+    <div data-ng-controller="montgomeryController as vm" class="well  well-sm">
+        <span class="ca-br-color"></span> <strong>{{ vm.name }}</strong>
+    </div>
+
+    <div data-ng-controller="harfordController as vm" class="well  well-sm">
+        <span class="ha-br-color"></span> <strong>{{ vm.name }}</strong>
+    </div>
+
+    <div data-ng-controller="princeGeorgeController as vm" class="well  well-sm">
+        <span class="pg-br-color"></span><strong>{{ vm.name }}</strong>
+    </div>
+</div>
+    <div class="right-side well well-lg">
+    <p> {{vm.information}}
+    </p>
+    </div>
+    <!--<div class="row" style="float:right; position: relative; margin-bottom: 0;">-->
+    <!--<p class="lead"><strong>Horatio A Cummings</strong><br> Senior Software Developer</p>-->
+    <!--</div>-->
+
 </div>
 
-    <div data-ng-controller="baltimoreController as vm">
-        <span><strong>{{ vm.name }}'s</strong> bridge is located in <strong>{{ vm.location }}</strong></span>
-    </div>
-
-    <div data-ng-controller="carollController as vm">
-        <span><strong>{{ vm.name }}'s</strong> bridge is located in <strong>{{ vm.location }}</strong></span>
-    </div>
-
-    <div data-ng-controller="harfordController as vm">
-        <span><strong>{{ vm.name }}'s</strong> bridge is located in <strong>{{ vm.location }}</strong></span>
-    </div>
-
-    <div data-ng-controller="princeGeorgeController as vm">
-        <span><strong>{{ vm.name }}'s</strong> bridge is located in <strong>{{ vm.location }}</strong></span>
-    </div>
-
-<div class="row" style="float:right; position: relative; margin-bottom: 0;">
-    <p class="lead"><strong>Horatio A Cummings</strong><br> Senior Software Developer</p>
-</div>
-
-</div>
-<script src="Scripts/ang/angular.js">  </script>
-<script src="Scripts/app-fiveBridges.js">  </script>
-<script src="Scripts/Controllers/annArundelController.js">  </script>
-<script src="Scripts/Controllers/baltimoreController.js">  </script>
-<script src="Scripts/Controllers/harfordController.js">  </script>
-<script src="Scripts/Controllers/carollController.js">  </script>
-<script src="Scripts/Controllers/princeGeorgeController.js">  </script>
+<script src="Scripts/ang/angular.js"></script>
+<script src="Scripts/app-fiveBridges.js"></script>
+<script src="Scripts/Controllers/annArundelController.js"></script>
+<script src="Scripts/Controllers/baltimoreController.js"></script>
+<script src="Scripts/Controllers/harfordController.js"></script>
+<script src="Scripts/Controllers/montgomeryController.js"></script>
+<script src="Scripts/Controllers/princeGeorgeController.js"></script>
+<script src="Scripts/bootstrap.js"></script>
+<script src="Scripts/bootstrap.min.js"></script>
 
 </body>
 </html>

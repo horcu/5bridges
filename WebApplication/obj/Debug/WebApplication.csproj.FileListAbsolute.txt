@@ -6,7 +6,6 @@ C:\Users\Horatio\RiderProjects\WebApplication\WebApplication\bin\EntityFramework
 C:\Users\Horatio\RiderProjects\WebApplication\WebApplication\bin\EntityFramework.SqlServer.dll
 C:\Users\Horatio\RiderProjects\WebApplication\WebApplication\bin\Microsoft.Practices.ServiceLocation.dll
 C:\Users\Horatio\RiderProjects\WebApplication\WebApplication\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Horatio\RiderProjects\WebApplication\WebApplication\bin\mscorlib.dll
 C:\Users\Horatio\RiderProjects\WebApplication\WebApplication\bin\Newtonsoft.Json.dll
 C:\Users\Horatio\RiderProjects\WebApplication\WebApplication\bin\Ninject.dll
 C:\Users\Horatio\RiderProjects\WebApplication\WebApplication\bin\Ninject.Web.Common.dll
@@ -49,10 +48,5 @@ C:\Users\Horatio\RiderProjects\WebApplication\WebApplication\bin\System.Web.Razo
 C:\Users\Horatio\RiderProjects\WebApplication\WebApplication\bin\System.Web.WebPages.xml
 C:\Users\Horatio\RiderProjects\WebApplication\WebApplication\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Horatio\RiderProjects\WebApplication\WebApplication\bin\System.Web.WebPages.Razor.xml
-C:\Users\Horatio\RiderProjects\WebApplication\WebApplication\bin\normidna.nlp
-C:\Users\Horatio\RiderProjects\WebApplication\WebApplication\bin\normnfc.nlp
-C:\Users\Horatio\RiderProjects\WebApplication\WebApplication\bin\normnfd.nlp
-C:\Users\Horatio\RiderProjects\WebApplication\WebApplication\bin\normnfkc.nlp
-C:\Users\Horatio\RiderProjects\WebApplication\WebApplication\bin\normnfkd.nlp
 C:\Users\Horatio\RiderProjects\WebApplication\WebApplication\obj\Debug\WebApplication.dll
 C:\Users\Horatio\RiderProjects\WebApplication\WebApplication\obj\Debug\WebApplication.pdb
