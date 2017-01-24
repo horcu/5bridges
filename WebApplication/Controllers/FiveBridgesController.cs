@@ -14,7 +14,7 @@ namespace WebApplication.Controllers
 {
     public class FiveBridgesController : ApiController
     {
-        private ICountiesRepository _repository;
+        public ICountiesRepository Repository { get; private set; }
 
         public FiveBridgesController()
         {
@@ -22,17 +22,17 @@ namespace WebApplication.Controllers
 
         public FiveBridgesController(ICountiesRepository repository)
         {
-            this._repository =  repository;
+            this.Repository =  repository;
         }
 
         [System.Web.Mvc.Route("/api/GetCountyByName/{name}")]
         [System.Web.Mvc.HttpGet]
         public async Task<HttpResponseMessage> GetBridgeByName(string name)
         {
-            if(_repository == null)
-                _repository = new CountiesRepository();
+            if(Repository == null)
+                Repository = new CountiesRepository();
 
-            var county = await _repository.GetCountyByName(name);
+            var county = await Repository.GetCountyByName(name);
 
             return county == null
                 ? Request.CreateErrorResponse(HttpStatusCode.BadRequest, "we were unable to retrieve data for the county name specified.")

@@ -49,27 +49,6 @@
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
       <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7">
-      <HintPath>..\packages\Ninject.3.2.0.0\lib\net45-full\Ninject.dll</HintPath>
-    </Reference>
-    <Reference Include="Ninject.Web.Common, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7">
-      <HintPath>..\packages\Ninject.Web.Common.3.2.0.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Ninject.Web.Mvc, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7">
-      <HintPath>..\packages\Ninject.MVC5.3.2.1.0\lib\net45-full\Ninject.Web.Mvc.dll</HintPath>
-    </Reference>
-    <Reference Include="Ninject.Web.WebApi, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7">
-      <HintPath>..\packages\Ninject.Web.WebApi.3.2.4.0\lib\net45-full\Ninject.Web.WebApi.dll</HintPath>
-    </Reference>
-    <Reference Include="StructureMap, Version=3.1.1.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\structuremap.3.1.1.134\lib\net40\StructureMap.dll</HintPath>
-    </Reference>
-    <Reference Include="StructureMap.Net4, Version=3.1.1.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\structuremap.3.1.1.134\lib\net40\StructureMap.Net4.dll</HintPath>
-    </Reference>
-    <Reference Include="StructureMap.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\structuremap.web.3.1.0.133\lib\net40\StructureMap.Web.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <HintPath>..\..\..\..\..\Windows\Microsoft.NET\Framework\v4.0.30319\System.ComponentModel.DataAnnotations.dll</HintPath>
@@ -113,8 +92,8 @@
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml" />
-    <Reference Include="WebActivator, Version=1.5.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\WebActivator.1.5\lib\net40\WebActivator.dll</HintPath>
+    <Reference Include="WebActivator, Version=1.5.1.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\WebActivator.1.5.1\lib\net40\WebActivator.dll</HintPath>
     </Reference>
     <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4">
       <HintPath>..\packages\WebActivatorEx.2.0.5\lib\net40\WebActivatorEx.dll</HintPath>
@@ -958,6 +937,9 @@
     <Content Include="Scripts\text.js" />
     <Content Include="Scripts\version.json" />
     <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DI" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
